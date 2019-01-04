@@ -1,0 +1,221 @@
+* {margin: 0; padding: 0; border: 0; background-repeat:no-repeat; font-family: "微软雅黑", Arial, "Helvetica Neue", Helvetica, sans-serif;}
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+iframe{width: 100%; height: 330px;}
+/*菜单*/
+.header{
+    width: 100%;
+    min-width: 1200px;
+    height: 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+/*不大于1600px*/
+/*@media screen and (max-width: 1600px) {*/
+    /*.header{min-width: 800px;}*/
+/*}*/
+/*不小于1600px*/
+/*@media screen and (min-width: 1600px) {*/
+    /*.abc {width: 900px}*/
+/*}*/
+.header_logo{
+    width: 100px;
+    /*min-width: 200px;*/
+    height: 100%;
+    background: url('./../images/edf_logo_2.png') no-repeat 50% 50%;
+    /*background-color: #DC1124;*/
+    background-size: 80% 65%;
+}
+.header_menu{
+    width: 1000px;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /*min-width: ;*/
+}
+.header_menu_children{
+    width: 100px;
+    height: 50%;
+    margin-left: 20px;
+    text-align: center;
+    font-family: "微软雅黑", "宋体";
+    font-size: 18px;
+    color: #9c9c9c;
+    /*border-bottom: 2px solid black;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+}
+.header_menu_children:hover{
+    color: #DC1124;
+    border-bottom: 2px solid #DC1124;
+}
+.header_menu_children_first{
+    margin-left: 60px;
+    width: 50px;
+}
+.header_menu_children_secound{
+    width: 100px;
+}
+.header_menu_selector{
+    color: #DC1124;
+    border-bottom: 2px solid #DC1124;
+}
+/*菜单--end*/
+/*页脚*/
+#footer{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    /*height: 500px;*/
+    background-color: #3B3B3B;
+}
+.footer_main{
+    width: 100%;
+    height: auto;
+    min-width: 1200px;
+    /*min-height: 300px;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #3B3B3B;
+    /*justify-content: center;*/
+
+}
+.footer_top{
+    /*border: 1px solid #DC1124;*/
+    width: 80%;
+    height: auto;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+.footer_top_left{
+    /*border: 1px solid #DC1124;*/
+    min-width: 425px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    border-right: 1px solid #ffffff;
+}
+.footer_top_right{
+    /*border: 1px solid #DC1124;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.footer_bottom{
+    /*border: 1px solid #DC1124;*/
+    display: block;
+    font-size: 12px;
+    width: 100%; height: 70px; text-align: center; line-height: 70px;
+    border-top: 1px solid #9c9c9c;
+}
+.footer_top_left_text, .footer_top_right_text{
+    /*border: 1px solid #DC1124;*/
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    -moz-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.footer_top_left_text{
+    /*margin-left: 70px;*/
+}
+.footer_top_right_text{
+    margin-left: 60px;
+}
+.footer_top_right_text img{
+    width: 26px;
+    height: 26px;
+}
+.footer_top_left_text a{
+    color: #ffffff;
+}
+.footer_top_left_text a:hover{
+    color: #DC1124;
+}
+

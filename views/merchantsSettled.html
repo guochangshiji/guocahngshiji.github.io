@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商户入驻</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--公用CSS-->
+    <link rel="stylesheet" href="../assets/css/main.css"/>
+    <!--商户入驻CSS-->
+    <link rel="stylesheet" href="../assets/css/merchantsSettled.css"/>
+    <!--屏幕不大于1590px(1600px)-->
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1590px)" href="../assets/cssL/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1590px)" href="../assets/cssL/merchantsSettled.css" />
+    <!--客服飘窗-->
+    <link rel="stylesheet" href="../assets/lib/bayWindow/bay.css">
+    <script type="text/javascript" src="../assets/lib/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="header" class="header">
+    <div class="header_logo"></div>
+    <div id="header_menu" class="header_menu">
+        <a href="index.html"><div class="header_menu_children header_menu_children_first">首页</div></a>
+        <!--<a href="http://www.wmdmall.com/" target="_blank"><div class="header_menu_children header_menu_children_secound">我买单商城</div></a>-->
+        <a href="product.html"><div class="header_menu_children">产品中心</div></a>
+        <!--<a href="#"><div class="header_menu_children header_menu_selector">商户入驻</div></a>-->
+        <a href="helpCenter.html"><div class="header_menu_children">帮助中心</div></a>
+        <a href="aboutUs.html"><div class="header_menu_children">关于我们</div></a>
+    </div>
+</div>
+<div id="main">
+    <div id="banner" class="banner"></div>
+    <div class="context">
+        <div class="context_title"><span>商户入驻/Merchants Settled</span></div>
+        <div class="context_banner"></div>
+        <div class="form">
+            <div class="form_li">
+                <div class="form_li_left">
+                    <span style="color: #DC1124">*</span><span>姓名</span>
+                </div>
+                <div class="form_li_right">
+                    <input type="text" id="user_name" class="input_text" placeholder="您的真实姓名" value=""/>
+                </div>
+            </div>
+            <div class="form_li">
+                <div class="form_li_left">
+                    <span style="color: #DC1124">*</span><span>手机号</span>
+                </div>
+                <div class="form_li_right">
+                    <input type="text" id="tel" class="input_text" placeholder="您的手机号" value=""/>
+                </div>
+            </div>
+            <div class="form_li">
+                <div class="form_li_left">
+                    <span style="color: #DC1124">*</span><span>店铺名称</span>
+                </div>
+                <div class="form_li_right">
+                    <input type="text" id="shop" class="input_text" placeholder="您的店铺名称" value=""/>
+                </div>
+            </div>
+            <div class="form_li">
+                <div class="form_li_left">
+                    <span style="color: #DC1124">*</span><span>经营类目</span>
+                </div>
+                <div class="form_li_right">
+                    <select id="management">
+                        <option value="">您的经营类目</option>
+                        <option value="1">电脑办公</option>
+                        <option value="2">手机通讯</option>
+                        <option value="3">平板数码</option>
+                        <option value="4">家电家具</option>
+                        <option value="5">票务旅游</option>
+                        <option value="6">医疗美容</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_li">
+                <div class="form_li_left">
+                    <span style="color: #DC1124">*</span><span>实际地址</span>
+                </div>
+                <div class="form_li_right">
+                    <select id="province">
+                        <option value="">--省--</option>
+                    </select>
+                    <select id="city" style="margin: 0 12px;">
+                        <option value="">--市--</option>
+                    </select>
+                    <select id="district">
+                        <option value="">--区/县--</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_li">
+                <div class="form_li_left"></div>
+                <div class="form_li_right">
+                    <input type="text" id="address" class="input_text" placeholder="详细地址；例如：沙河东路88号" value="" />
+                </div>
+            </div>
+            <div class="form_li">
+                <div class="form_li_left">
+                    <span style="color: #DC1124">*</span><span>验证码</span>
+                </div>
+                <div class="form_li_right">
+                    <input  type="text" class="input_text auth-code" id="inputCode"/>
+                    <span id="send_identify_a" class="send_identify_a">发送验证码</span>
+                    <span id="send_identify_b" class="send_identify_b">60秒后再次发送</span>
+                </div>
+            </div>
+            <div class="form_li">
+                <div class="form_li_left"></div>
+                <div class="form_li_right">
+                    <input type="button" id="submitBtn" class="input_text input_sub" value="提交签约申请" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div id="footer">
+    <iframe style="height: 235px; width: 100%;" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="footer.html"></iframe>
+</div>
+<!--客服飘窗-->
+<div id="rightArrow"><a href="javascript:;" title="在线客户"></a></div>
+<div id="floatDivBoxs">
+    <div class="floatDtt">在线客服</div>
+    <div class="floatShadow">
+        <ul class="floatDqq">
+            <li><a target="_blank" href="tencent://message/?uin=1428589970&Site=sc.chinaz.com&Menu=yes" style="text-decoration: none;"><img src="../assets/images/bay/qq.png" align="absmiddle">1428589970</a></li>
+            <li><a target="_blank" href="tencent://message/?uin=2559107660&Site=sc.chinaz.com&Menu=yes"><img src="../assets/images/bay/qq.png" align="absmiddle">2559107660</a></li>
+            <li><a target="_blank" href="tencent://message/?uin=1984771649&Site=sc.chinaz.com&Menu=yes"><img src="../assets/images/bay/qq.png" align="absmiddle">1984771649</a></li>
+        </ul>
+        <div class="floatDtxt">热线电话</div>
+        <div class="floatDtel">
+            <!--<img src="../assets/images/bay/online_phone.jpg" width="155" height="45" alt="">-->
+            <span style="margin-left: 10px;">4008-441-448</span><br />
+            <span style="margin-left: 10px;">0755-84374096</span>
+        </div>
+        <div class="floatImg"><img src="../assets/images/bay/wap_ico1.png" style="width: 90%;height: 90%;"><br />手机快捷注册</div>
+    </div>
+    <div class="floatDbg"></div>
+</div>
+<!--客服飘窗-end-->
+<!--公用JS-->
+<script type="text/javascript" src="../assets/js/main.js"></script>
+<!--城市联动JS-->
+<script type="text/javascript" src="../assets/lib/china_city.js"></script>
+<!--商户入驻JS-->
+<script type="text/javascript" src="../assets/js/merchants.js"></script>
+<!--客服飘窗-->
+<script type="text/javascript" src="../assets/lib/bayWindow/bay.js"></script>
+</body>
+</html>

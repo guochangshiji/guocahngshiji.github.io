@@ -1,0 +1,171 @@
+#main{
+    width: 100%; height: auto;
+}
+.banner{
+    width: 100%; height: 410px;
+    background: url("./../images/merchant/merchant_banner.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.context{
+    width: 100%;min-width: 1200px;height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.context_title{
+    width: 80%;height: 100px; font-family: "微软雅黑", "宋体";font-size: 24px; letter-spacing: 2px; color: #3B3B3B;
+    /*border: 1px solid #DC1124;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.context_banner{
+    width: 80%;
+    min-width: 1200px;
+    height: 360px;
+    background: url("./../images/merchant/sign.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+.form{
+    width: 80%;
+    min-width: 1200px;
+    height: 100%;
+    color: #7F7F7F;
+    /*border: 1px solid #DC1124;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 50px auto 100px;
+}
+.form_li{
+    /*border: 1px solid #DC1124;*/
+    width: 600px;
+    height: 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.form_li_left{
+    /*border: 1px solid #DC1124;*/
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.form_li_right{
+    /*border: 1px solid #DC1124;*/
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.input_text{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #7F7F7F;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #7F7F7F;
+    cursor: pointer;
+    outline: 0;
+}
+select{
+    padding-left: 10px;
+    width: 32%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border: 1px solid #7F7F7F;
+    font-size: 14px;
+    color: #7f7f7f;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#management{
+    width: 100%;
+}
+.auth-code{
+    width: 62%;
+}
+.send_identify_a{
+    display: inline-block;
+    height: 40px;
+    width: 161px;
+    /*border: 1px solid #DC1124;*/
+    line-height: 40px;
+    background-color: #DC1124;
+    color:#fff;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.send_identify_b{
+    display: none;
+    height: 40px;
+    width: 161px;
+    /*border: 1px solid #DC1124;*/
+    line-height: 40px;
+    background-color: #DC1124;
+    color:#fff;
+    text-align: center;
+    margin-left: 10px;
+    cursor: wait;
+}
+.input_sub{
+    width: 100%;
+    color: #ffffff;
+    background-color: #DC1124;
+    border: 0;
+}

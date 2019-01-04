@@ -1,0 +1,114 @@
+@charset "utf-8";
+/*html, body {*/
+	/*height: 100%;*/
+	/*padding: 0;*/
+	/*margin: 0;*/
+/*}*/
+/*body {*/
+	/*background-color: #eee;*/
+	/*position: relative;*/
+	/*min-height: 300px;*/
+/*}*/
+/*body * {*/
+	/*font-family: Arial, Geneva, SunSans-Regular, sans-serif;*/
+	/*font-size: 14px;*/
+	/*color: #333;*/
+	/*line-height: 22px;*/
+/*}*/
+#wrapper {
+	/*background-color: #fff*/;
+	/*border-top: 1px solid #ccc;*/
+	width: 100%;
+	height: 50%;
+	/*margin-top: -1px;*/
+	position: relative;
+	left: 0;
+	top: 50%;
+	margin: 100px 0 70px 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+#carousel {
+	margin-top: -100px;
+}
+#carousel div {
+	text-align: center;
+	width: 200px;	/*设置子项的宽度*/
+	height: 75px;	/*设置子项的高度*/
+	float: left;
+	position: relative;
+}
+#carousel div img {
+	border: none;
+    width: 200px;
+    height: 75px;
+}
+#carousel div span {
+	display: none;
+}
+#carousel div:hover span {
+	background-color: #333;
+	color: #fff;
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	display: inline-block;
+	width: 100px;
+	padding: 2px 0;
+	margin: 0 0 0 -50px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	border-radius: 3px;
+}
+#donate-spacer {
+	height: 100%;
+}
+#donate {
+	width: 750px;
+	padding: 50px 75px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#donate p, #donate form {
+	margin: 0;
+	float: left;
+}
+#donate p {
+	width: 650px;
+}
+#donate form {
+	width: 100px;
+}
+/*不大于1590px(1600px)*/
+@media screen and (max-width: 1590px) {
+    #wrapper{
+        margin: 70px 0 50px 0;
+    }
+    #carousel {
+        margin-top: -70px;
+    }
+    #carousel div {
+        width: 140px;	/*设置子项的宽度*/
+        height: 52px;	/*设置子项的高度*/
+    }
+    #carousel div img {
+        border: none;
+        width: 140px;
+        height: 52px;
+    }
+    #carousel div:hover span {
+        font-size: 10px;
+        line-height: 16px;
+        width: 70px;
+        margin: 0 0 0 -27px;
+        bottom: 21px;
+    }
+}
